@@ -1,9 +1,9 @@
 import React from 'react';
 
-const RulesPage = () => (
+const StorePolicy = () => (
   <div>
     <h1>Store Policy</h1>
   </div>
 );
 
-export default RulesPage;
+export default StorePolicy;
