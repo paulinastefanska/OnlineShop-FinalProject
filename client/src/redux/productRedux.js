@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 // action name creator
 const reducerName = 'products';
 const createActionName = name => `app/${reducerName}/${name}`;
@@ -33,12 +35,12 @@ export default function reducer(statePart = initialState, action = {}) {
 export const loadProductsRequest = () => {
   return dispatch => {
 
-    console.log('Request started...');
-    setTimeout(() => {
-      const arr = [{ id: 'a3fssdc1', title: 'Product 1', content: 'Lorem Ipsum' }];
-      dispatch(loadProducts(arr));
-      console.log('Request finished after 2sec!');
-    }, 2000);
+    axios.get('http://localhost:8000/api/products').then(res => {
+      dispatch(loadProducts(res.data));
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
 
   };
 };
