@@ -5,7 +5,7 @@ class Products extends React.Component {
 
   componentDidMount() {
     const { loadProducts } = this.props;
-    loadPosts();
+    loadProducts();
   }
 
   render() {
