@@ -1,8 +1,12 @@
 import React from 'react';
 
+import ProductsCounter from '../../features/ProductsCounter/ProductsCounter';
+import Products from '../../features/Products/Products';
+
 const HomePage = () => (
   <div>
-    <h1>Home</h1>
+    <ProductsCounter />
+    <Products />
   </div>
 );
 
