@@ -1,6 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 import ProductsList from '../ProductsList/ProductsList';
+import Spinner from '../../common/Spinner/Spinner';
 
 class Products extends React.Component {
 
@@ -10,10 +12,11 @@ class Products extends React.Component {
   }
 
   render() {
-  	const { products } = this.props;
+  	const { products, request } = this.props;
 
     return (
       <div>
+        {request.pending && <Spinner />}
         <ProductsList products={products} />
       </div>
     );
