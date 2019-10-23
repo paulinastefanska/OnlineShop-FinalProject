@@ -34,14 +34,15 @@ export default function reducer(statePart = initialState, action = {}) {
 /* THUNKS */
 
 export const loadProductsRequest = () => {
-  return dispatch => {
+  return async dispatch => {
 
-    axios.get(`${API_URL}/products`).then(res => {
+    try {
+
+      let res = await axios.get(`${API_URL}/products`);
       dispatch(loadProducts(res.data));
-    })
-    .catch(err => {
-      console.log(err.message);
-    });
+    } catch(e) {
+      console.log(e.message);
+    }
 
   };
 };
