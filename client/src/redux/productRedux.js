@@ -8,7 +8,7 @@ const createActionName = name => `app/${reducerName}/${name}`;
 /* SELECTORS */
 
 export const getProducts = ({ products }) => products;
-export const getProductsCounter = ({ products }) => products.data.length;
+//export const getProductsCounter = ({ products }) => products.data.length;
 
 /* ACTIONS */
 
