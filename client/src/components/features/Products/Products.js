@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 
 import ProductsList from '../ProductsList/ProductsList';
 import Spinner from '../../common/Spinner/Spinner';
+import Alert from '../../common/Alert/Alert';
 
 class Products extends React.Component {
 
@@ -14,12 +15,17 @@ class Products extends React.Component {
   render() {
   	const { products, request } = this.props;
 
-    return (
-      <div>
-        {request.pending && <Spinner />}
-        <ProductsList products={products} />
-      </div>
-    );
+    if (request.pending === false && request.success === true && products.length > 0) 
+          return <ProductsList products={products} />
+
+      else if (request.pending === true || request.success === null) 
+        return <Spinner />
+
+      else if (request.pending === false && request.error !== null) 
+        return <Alert variant={'error'} children={request.error} />
+
+      else if (request.pending === false && request.success === true && products.length === 0) 
+        return <Alert variant={'info'} children={'- no posts -'} />
   }
 
 };
