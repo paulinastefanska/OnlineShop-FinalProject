@@ -1,12 +1,13 @@
 @import '../../../styles/settings.scss';
 
 .main-menu {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   font-size: $base-size * 1.5;
   text-transform: uppercase;
+  margin: 0;
   
   li {
     margin: 0 $base-size;
