@@ -5,7 +5,7 @@ import './Logo.scss';
 
 const Logo = () => (
 	<Link className="logo" to ="/">
-  	<h1>Products store</h1>
+  	<h1>TechStore</h1>
   </Link>
 );
 
