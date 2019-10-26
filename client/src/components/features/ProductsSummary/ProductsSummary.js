@@ -1,22 +1,27 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { Link } from 'react-router-dom';
 import './ProductsSummary.scss';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Card, CardImg, CardText, CardBody, CardTitle, CardLink } from 'reactstrap';
 
-const ProductSummary = ({ id, title, content }) => (
-
-  <div className="product-summary">
-    <Link to={'product/' + id}>
-      <h1>{title}</h1>
-      <p>{content}</p>
-    </Link>
-  </div>
+const ProductSummary = ({ img, name, price }) => (
+  <div className={'product-summary'}>
+        <Card>
+            <CardImg src={img}/>
+            <CardBody>
+                <CardTitle>{name}</CardTitle>
+                <CardText>{price}</CardText>
+                <CardLink href={'/product'}></CardLink>
+            </CardBody>
+        </Card>
+    </div>
 );
 
 ProductSummary.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.string,
-  content: PropTypes.string,
+  img: PropTypes.object,
+  name: PropTypes.string,
+  price: PropTypes.string,
 };
 
 export default ProductSummary;

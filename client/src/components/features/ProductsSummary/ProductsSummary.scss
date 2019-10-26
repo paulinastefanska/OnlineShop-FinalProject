@@ -1,8 +1,6 @@
 @import '../../../styles/settings.scss';
 
 .product-summary {
-    border-bottom: 1px solid $color-textfield-border;
-    padding: $base-size;
     margin-bottom: $base-size;
     margin-left: -$base-size;
     transition: .2s;
@@ -14,5 +12,4 @@
     margin-top: -$base-size / 5;
     border-radius: $radius;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    padding-left: $base-size * 1.5;
 }
