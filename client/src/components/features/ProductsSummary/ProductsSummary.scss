@@ -1,15 +1,13 @@
 @import '../../../styles/settings.scss';
 
 .product-summary {
-    margin-bottom: $base-size;
-    margin-left: -$base-size;
-    transition: .2s;
+    margin: 10px;
+    transition: ease .2s;
     cursor: pointer;
-}
-
-.product-summary:hover {
-    margin-left: -$base-size*2;
-    margin-top: -$base-size / 5;
-    border-radius: $radius;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 0;
+    &:hover{
+    	border-radius: $radius;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+    }
 }
