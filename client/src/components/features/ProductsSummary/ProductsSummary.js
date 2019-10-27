@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import './ProductsSummary.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Col, Card, CardText, CardImg, CardBody, CardTitle, CardSubtitle, CardLink } from 'reactstrap';
+import { Col, Card, Badge, CardImg, CardBody, CardTitle, CardSubtitle, CardLink } from 'reactstrap';
 
 export class ProductSummary  extends React.Component  {
   render() {
@@ -11,10 +11,10 @@ export class ProductSummary  extends React.Component  {
     return (
       <Col className="product-summary" xs={6}>
         <Card>
-          <CardText className="product-tag">{tag}</CardText>
+          <Badge className="badge-tag" color="info">{tag}</Badge>
           <CardImg src={img.src} alt="item"/>
           <CardBody>
-              <CardTitle>{name}</CardTitle>
+              <CardTitle className="item-name">{name}</CardTitle>
               <CardSubtitle>{price}</CardSubtitle>
               <CardLink href={'/product'}></CardLink>
           </CardBody>
