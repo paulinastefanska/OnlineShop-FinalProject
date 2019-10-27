@@ -1,13 +1,25 @@
 @import '../../../styles/settings.scss';
 
 .product-summary {
-    margin: 10px;
-    transition: ease .2s;
-    cursor: pointer;
-    padding: 0;
-    &:hover{
-    	border-radius: $radius;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      transform: scale(1.05);
-    }
+  margin: 10px;
+  transition: ease .2s;
+  cursor: pointer;
+  padding: 0;
+  &:hover{
+  	border-radius: $radius;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+  }
+  .product-tag {
+  	width: 30%;
+  	margin: 10px 10px 0 10px;
+  	text-align: center;
+  	font-size: $base-size;
+  	font-weight: bold;
+  }
+}
+.product-summary:first-child p, .product-summary:nth-child(2) p {
+	border: 1px solid $color-ocean-blue;
+	border-radius: 40px;
+	background-color: $color-ocean-blue;
 }
