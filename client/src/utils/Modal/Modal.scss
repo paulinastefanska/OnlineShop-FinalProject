@@ -1,9 +1,13 @@
+@import '../../styles/settings.scss';
+
 .discount {
 	margin-bottom: 60px;
 	text-align: center;
+	height: 3rem;
 	button {
 		width: 40%;
-		
+		height: 100%;
+		font-size: $base-size * 1.5;
 	}
 }
 .discount-code {
