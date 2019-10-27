@@ -2,21 +2,22 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import './ProductsSummary.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Col, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardLink } from 'reactstrap';
+import { Col, Card, CardText, CardImg, CardBody, CardTitle, CardSubtitle, CardLink } from 'reactstrap';
 
 export class ProductSummary  extends React.Component  {
   render() {
-    const { img, name, price } = this.props;
+    const { tag, img, name, price } = this.props;
       
     return (
       <Col className="product-summary" xs={6}>
         <Card>
-            <CardImg src={img.src} alt="item"/>
-            <CardBody>
-                <CardTitle>{name}</CardTitle>
-                <CardSubtitle>{price}</CardSubtitle>
-                <CardLink href={'/product'}></CardLink>
-            </CardBody>
+          <CardText className="product-tag">{tag}</CardText>
+          <CardImg src={img.src} alt="item"/>
+          <CardBody>
+              <CardTitle>{name}</CardTitle>
+              <CardSubtitle>{price}</CardSubtitle>
+              <CardLink href={'/product'}></CardLink>
+          </CardBody>
         </Card>
       </Col>
     )  
@@ -25,6 +26,7 @@ export class ProductSummary  extends React.Component  {
 
 ProductSummary.propTypes = {
   id: PropTypes.string,
+  tag: PropTypes.string,
   img: PropTypes.object,
   name: PropTypes.string,
   price: PropTypes.string,
