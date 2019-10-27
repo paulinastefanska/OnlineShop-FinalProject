@@ -5,6 +5,7 @@ const loadTestData = async () => {
   const data = [
     {
       id: '1234a',
+      tag: 'new',
       img: { src: '../../../images/prod03.jpg'},
       name: 'Apple iMac 27" Retina',
       price: '$1729.00',
@@ -12,6 +13,7 @@ const loadTestData = async () => {
     },
     {
       id: '2234a',
+      tag: 'last one',
       img: { src: '../../../images/prod05.jpg'},
       name: 'DJI Mavic 2 Pro Combo',
       price: '$1729.00',
@@ -19,6 +21,7 @@ const loadTestData = async () => {
     },
     {
       id: '3234a',
+      tag: '',
       img: { src: '../../../images/prod01.jpg'},
       name: 'GoPro Hero 7 Black',
       price: '$359.99',
@@ -26,6 +29,7 @@ const loadTestData = async () => {
     },
     {
       id: '4234a',
+      tag: '',
       img: { src: '../../../images/prod06.jpg'},
       name: 'DJI Phantom 4 Pro',
       price: '$1765.00',
@@ -33,6 +37,7 @@ const loadTestData = async () => {
     },
     {
       id: '5234a',
+      tag: '',
       img: { src: '../../../images/prod04.jpg'},
       name: 'Apple iPhone 11 Pro Max 64GB',
       price: '$1099.99',
@@ -40,6 +45,7 @@ const loadTestData = async () => {
     },
     {
       id: '6234a',
+      tag: '',
       img: { src: '../../../images/prod02.jpg'},
       name: 'GoPro Hero 7 Black Limited',
       price: '$389.99',
