@@ -17,7 +17,7 @@ const ModalCode = (props) => {
     <div className="discount">
       <Button color="info" onClick={toggle}> Click here to get your discount </Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Discount -10%</ModalHeader>
+        <ModalHeader toggle={toggle}>Congratulations, you got -10% discount!</ModalHeader>
         <ModalBody>
           Your discount code: <span className="discount-code">SDFV86F</span>
         </ModalBody>
