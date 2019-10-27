@@ -5,7 +5,16 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 40px;
+	transition: .3s;
 	.cart-icon {
-		color: $color-light-blue;
+		color: $color-text;
+		padding: 5px;
+		&:hover {
+			color: $color-light-blue;
+		}
+		&.active {
+			color: $color-light-blue;
+		}
 	}
 }
