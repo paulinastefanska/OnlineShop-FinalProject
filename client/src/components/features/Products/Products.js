@@ -26,7 +26,7 @@ class Products extends React.Component {
         return <Alert color="danger">{request.error}</Alert>
 
       else if (request.pending === false && request.success === true && products.length === 0) 
-        return <Alert color="info">- no posts -</Alert>
+        return <Alert color="info">- no products -</Alert>
   }
 
 };
