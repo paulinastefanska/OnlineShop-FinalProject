@@ -2,8 +2,8 @@ import React from 'react';
 
 import ProductsCounter from '../../features/ProductsCounter/ProductsCounterContainer';
 import Products from '../../features/Products/ProductsContainer';
-import TopCarousel from '../../../utils/Carousel/Carousel';
-import ModalCode from '../../../utils/Modal/Modal';
+import TopCarousel from '../../features/Carousel/Carousel';
+import ModalCode from '../../features/Modal/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap'; 
 
