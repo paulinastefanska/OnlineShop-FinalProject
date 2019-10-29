@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
+
 import './ProductsSummary.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Col, Card, Badge, CardImg, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
@@ -13,10 +14,10 @@ export class ProductSummary  extends React.Component  {
       <Col className="product-summary" xs={6}>
         <Link to={`/product/${id}`}>
           <Card>
-            <Badge className="badge-tag" color="info">{tag}</Badge>
+            <Badge color="info">{tag}</Badge>
             <CardImg src={img.src} alt="item"/>
             <CardBody>
-              <CardTitle className="item-name">{name}</CardTitle>
+              <CardTitle>{name}</CardTitle>
               <CardSubtitle>{price}</CardSubtitle>
             </CardBody>
           </Card>

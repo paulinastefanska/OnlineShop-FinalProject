@@ -9,16 +9,14 @@
   	border-radius: $radius;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     transform: scale(1.05);
-  }
-  .badge {
-    font-weight: normal;
-  }
-  .badge-tag {
-  	width: 30%;
-    font-size: $base-size;
-    margin: 10px 10px 0 10px;
-  }
-  .item-name {
-  	font-weight: bold;
-  }
+  } 
+}
+.badge {
+  font-weight: normal;
+  width: 4rem;
+  font-size: $base-size;
+  margin: 10px 10px 0 10px;
+}
+.card-title {
+  font-weight: bold;
 }

@@ -7,6 +7,6 @@ const ProductController = require('../controllers/product.controller');
 router.route('/products').get(ProductController.getProduct);
 
 //get single product
-router.route('/products/:id').get(ProductController.getSingleProduct);
+router.route('/product/:id').get(ProductController.getSingleProduct);
 
 module.exports = router;

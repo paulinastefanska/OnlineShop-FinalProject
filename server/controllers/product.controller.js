@@ -1,11 +1,11 @@
-const Post = require('../models/product.model');
+const Product = require('../models/product.model');
 
-// get all posts
+// get all products
 
 exports.getProduct = async (req, res) => {
 
   try {
-    res.status(200).json(await Post.find());
+    res.status(200).json(await Product.find());
   } catch(err) {
     res.status(500).json(err);
   }

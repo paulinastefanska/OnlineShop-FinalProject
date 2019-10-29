@@ -8,7 +8,7 @@ import Faq from './components/pages/Faq/FaqPage';
 import StorePolicy from './components/pages/StorePolicy/StorePolicyPage';
 import Contact from './components/pages/Contact/ContactPage';
 import Cart from './components/pages/Cart/CartPage';
-import Product from './components/pages/Product/ProductPage';
+import SingleProduct from './components/pages/SingleProduct/SingleProductPage';
 import NotFound from './components/pages/NotFound/NotFoundPage';
 
 class App extends React.Component {
@@ -22,7 +22,7 @@ class App extends React.Component {
           <Route path="/storepolicy" exact component={StorePolicy} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/cart" exact component={Cart} />
-          <Route path="/product" exact component={Product} />
+          <Route path="/product/:id" exact component={SingleProduct} />
           <Route component={NotFound} />
         </Switch>
       </MainLayout>
