@@ -9,6 +9,7 @@
 	transition: .3s;
 	.cart-icon {
 		color: $color-text;
+		font-size: $base-size * 2;
 		margin-left: 14px;
 		&:hover {
 			color: $color-light-blue;

@@ -25,7 +25,7 @@ class NavBar extends React.Component {
         <Logo />
         <div className="navbar-wrapper">
           <MainMenu links={links} />
-          <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} size="2x" /></NavLink>
+          <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
         </div>
       </nav>
     );
