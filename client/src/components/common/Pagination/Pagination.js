@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import './Pagination.scss';
 
 class Pagination extends React.Component {
@@ -42,9 +44,9 @@ class Pagination extends React.Component {
 	      <ul className="pagination__list">
 	      	{ presentPage > 1 ? (
             <li
-              className={`pagination__list__item${(true) ? ' pagination__list__item--active' : '' }`}
+              className={`pagination__list__item${(true) ? ' pagination__list__item' : '' }`}
 	            onClick={this.prevPage}>
-	            &lt;
+	            <FontAwesomeIcon icon={faAngleLeft} />
             </li>) : ''}
 
 	        {[...Array(pages)].map((el, page) => (
@@ -58,9 +60,9 @@ class Pagination extends React.Component {
 
 	        {presentPage === pages ?  '' : (
             <li
-              className={`pagination__list__item${(true) ? ' pagination__list__item--active' : '' }`}
+              className={`pagination__list__item${(true) ? ' pagination__list__item' : '' }`}
               onClick={this.nextPage}>
-              &gt;
+              <FontAwesomeIcon icon={faAngleRight} />
           	</li>)}
 	      </ul>
 	    </div>

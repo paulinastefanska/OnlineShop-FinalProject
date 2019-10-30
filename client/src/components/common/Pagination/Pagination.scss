@@ -1,25 +1,26 @@
 @import '../../../styles/settings.scss';
 
 .pagination {
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
 
   &__list {
     display: flex;
     justify-content: center;
     list-style-type: none;
     font-size: $base-size * 1.5;
+    padding: 0;
 
     &__item {
-      display: block;
       width: $base-size * 2;
       height: $base-size * 2;
-      margin: $base-size;
+      margin: $base-size / 2;
+      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      border-radius: $radius;
       transition: .2s;
       color: $color-text-light;
 
@@ -31,6 +32,5 @@
         color: $color-primary;
       }
     }
-
   }
 }
