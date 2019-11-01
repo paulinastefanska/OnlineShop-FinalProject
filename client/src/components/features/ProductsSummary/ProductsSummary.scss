@@ -19,6 +19,10 @@
 }
 .card-title {
   font-weight: bold;
+  font-size: $base-size*1.1;
+}
+.card-subtitle {
+  font-size: $base-size*1.1;
 }
 .non-badge {
   height: 1.9rem; 
