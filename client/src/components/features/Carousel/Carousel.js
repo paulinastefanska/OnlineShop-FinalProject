@@ -30,6 +30,6 @@ const items = [
   }
 ];
 
-const TopCarousel = () => <UncontrolledCarousel className="carousel" items={items} />;
+const TopCarousel = () => <UncontrolledCarousel items={items} />;
 
 export default TopCarousel;

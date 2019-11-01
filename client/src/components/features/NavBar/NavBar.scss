@@ -5,12 +5,12 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 	transition: .3s;
 	.cart-icon {
 		color: $color-text;
 		font-size: $base-size * 2;
-		margin-left: 14px;
+		margin-left: 1rem;
 		&:hover {
 			color: $color-light-blue;
 		}
