@@ -4,9 +4,9 @@ import { withRouter } from 'react-router-dom';
 
 import './SingleProduct.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Alert, Row, Col, Card, Badge, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
+import { Alert, Container, Row, Col, Card, Badge, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 import Spinner from '../../common/Spinner/Spinner';
-
+import BackButton from '../../common/BackButton/BackButton';
 
 class SingleProduct extends React.Component {
 
@@ -20,26 +20,29 @@ class SingleProduct extends React.Component {
 
       if (request.pending === false && request.success === true && products.length > 0) 
           return (
-            <Col className="single-product" xs={12}>
-              <Card>
-                <Row>
-                  <Col xs={6}>
-                    <Badge color="info">{products[0].tag}</Badge>
-                    <CardImg src={products[0].img.src} alt="item" />
-                  </Col>
-                  <Col xs={6}>  
-                    <CardBody>
-                      <CardTitle>{products[0].name}</CardTitle>
-                      <CardSubtitle>{products[0].price}</CardSubtitle>
-                      <CardText>{products[0].desc}</CardText>
-                    </CardBody>
-                    <Button color="primary">
-                        Add to cart
-                    </Button>
-                  </Col>
-                </Row>
-              </Card>
-            </Col>
+            <Container>
+              <BackButton />
+              <Col className="single-product" xs={12}>
+                <Card>
+                  <Row>
+                    <Col xs={6}>
+                      <Badge color="info">{products[0].tag}</Badge>
+                      <CardImg src={products[0].img.src} alt="item" />
+                    </Col>
+                    <Col xs={6}>  
+                      <CardBody>
+                        <CardTitle>{products[0].name}</CardTitle>
+                        <CardSubtitle>{products[0].price}</CardSubtitle>
+                        <CardText>{products[0].desc}</CardText>
+                      </CardBody>
+                      <Button color="info">
+                          Add to cart
+                      </Button>
+                    </Col>
+                  </Row>
+                </Card>
+              </Col>
+            </Container>
           ); 
 
         else if (request.pending === true || request.success === null) 
