@@ -12,7 +12,7 @@ export const getProductsCounter = ({ products }) => products.data.length;
 export const getRequest = ({ products }) => products.request;
 export const getSingleProduct = ({ products }) => products.singleProduct;
 export const getPages = ({ products }) => Math.ceil(products.amount / products.productsPerPage);
-export const presentPage = ({ products }) => products.presentPage;
+export const getpresentPage = ({ products }) => products.presentPage;
 export const getProductsSort = ({ products }) => {
   const sortProducts = [...products.data].sort((a, b) => {
        if (a[products.key] > b[products.key]) return products.direction === 'asc' ? 1 : -1;
