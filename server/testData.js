@@ -21,7 +21,7 @@ const loadTestData = async () => {
     },
     {
       id: '3234a',
-      tag: '',
+      tag: 'new',
       img: { src: '../../../images/prod01.jpg'},
       name: 'GoPro Hero 7 Black',
       price: '$359.99',
