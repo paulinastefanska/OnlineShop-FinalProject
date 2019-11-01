@@ -22,14 +22,14 @@ class SingleProduct extends React.Component {
           return (
             <Container>
               <BackButton />
-              <Col className="single-product" xs={12}>
+              <Col className="single-product" md={12}>
                 <Card>
                   <Row>
-                    <Col xs={6}>
+                    <Col md={6}>
                       <Badge color="info">{products[0].tag}</Badge>
                       <CardImg src={products[0].img.src} alt="item" />
                     </Col>
-                    <Col xs={6}>  
+                    <Col md={6}>  
                       <CardBody>
                         <CardTitle>{products[0].name}</CardTitle>
                         <CardSubtitle>{products[0].price}</CardSubtitle>

@@ -1,4 +1,7 @@
+@import '../../../styles/settings.scss';
+
 .single-product {
+	font-size: $base-size * 1.2;
 	.card-text {
 		margin: 0.6rem 0;
 	}

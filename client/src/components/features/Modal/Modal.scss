@@ -1,14 +1,14 @@
 @import '../../../styles/settings.scss';
 
 .discount {
-	margin-bottom: 60px;
-	padding: 20px 0;
+	margin-bottom: 3rem;
+	padding: 1.3rem 0;
 	text-align: center;
 	height: 5.5rem;
 	border: 1px solid rgba(0,0,0,.125);
 	border-radius: .25rem;
 	button {
-		width: 40%;
+		width: 30%;
 		height: 100%;
 		font-size: $base-size * 1.5;
 	}
@@ -19,9 +19,9 @@
 	align-items: center;
 }
 .discount-code {
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: bold;
-	width: 150px;
+	width: 10rem;
 	text-align: center;
 	margin-left: 1rem;
 }
