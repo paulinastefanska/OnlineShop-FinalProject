@@ -25,7 +25,7 @@ const items = [
     src: Img3,
     altText: 'Slide 3',
     caption: 'only in TechStore',
-    header: 'client satisfaction',
+    header: 'satisfaction',
     key: '3'
   }
 ];
