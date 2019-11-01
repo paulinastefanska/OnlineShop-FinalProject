@@ -7,18 +7,18 @@ import './Pagination.scss';
 
 class Pagination extends React.Component {
 
-	state = {
-	  presentPage: this.props.initialPage || 1
-	}
+  state = {
+    presentPage: this.props.initialPage || 1
+  }
 
-	changePage = (newPage) => {
-	  const { onPageChange } = this.props;
+  changePage = (newPage) => {
+    const { onPageChange } = this.props;
 
-	  this.setState({ presentPage: newPage });
-	  onPageChange(newPage);
-	}
+    this.setState({ presentPage: newPage });
+    onPageChange(newPage);
+  }
 
-	prevPage = () => {
+  prevPage = () => {
     const { presentPage } = this.state;
     const { changePage } = this;
     if (presentPage > 1 )
@@ -26,7 +26,7 @@ class Pagination extends React.Component {
   };
 
   nextPage = () => {
-  	const { pages } = this.props;
+    const { pages } = this.props;
     const { presentPage } = this.state;
     const { changePage } = this;
     if (presentPage < pages )
@@ -35,39 +35,39 @@ class Pagination extends React.Component {
 
   render() {
 
-	  const { pages } = this.props;
-	  const { presentPage } = this.state;
-	  const { changePage } = this;
+    const { pages } = this.props;
+    const { presentPage } = this.state;
+    const { changePage } = this;
 
-	  return (
-	    <div className="pagination">
-	      <ul className="pagination__list">
-	      	{ presentPage > 1 ? (
+    return (
+      <div className="pagination">
+        <ul className="pagination__list">
+          { presentPage > 1 ? (
             <li
               className={`pagination__list__item${(true) ? ' pagination__list__item' : '' }`}
-	            onClick={this.prevPage}>
-	            <FontAwesomeIcon icon={faAngleLeft} />
+              onClick={this.prevPage}>
+              <FontAwesomeIcon icon={faAngleLeft} />
             </li>) : ''}
 
-	        {[...Array(pages)].map((el, page) => (
-		        <li
-		            key={++page}
-		            onClick={() => { changePage(page) }}
-		            className={`pagination__list__item${((page) === presentPage) ? ' pagination__list__item--active' : ''}`}>
-		            {page}
-		        </li>
-	        ))}
+          {[...Array(pages)].map((el, page) => (
+            <li
+                key={++page}
+                onClick={() => { changePage(page) }}
+                className={`pagination__list__item${((page) === presentPage) ? ' pagination__list__item--active' : ''}`}>
+                {page}
+            </li>
+          ))}
 
-	        {presentPage === pages ?  '' : (
+          {presentPage === pages ?  '' : (
             <li
               className={`pagination__list__item${(true) ? ' pagination__list__item' : '' }`}
               onClick={this.nextPage}>
               <FontAwesomeIcon icon={faAngleRight} />
-          	</li>)}
-	      </ul>
-	    </div>
-	  );
-	}
+            </li>)}
+        </ul>
+      </div>
+    );
+  }
 
 }
 
