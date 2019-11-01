@@ -1,0 +1,34 @@
+@import '../../../styles/settings.scss';
+
+.sort-by {
+	margin-bottom: 1rem;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	.btn {
+		border: none;
+		border-radius: 0;
+		border-bottom: 1.5px solid $color-text-bright;
+		background-color: inherit;
+		color: $color-text-light;
+		outline: none;
+		box-shadow: none;
+		padding: 0;
+		margin: 0.6rem 0 0 0.6rem;
+	}
+	.btn:hover {
+		border-bottom: 1.5px solid $color-light-blue;
+	}
+	.btn.active.focus, .btn.active:focus,
+	.btn.focus, .btn:active.focus, 
+	.btn:active:focus, .btn:focus {
+		border: none;
+		outline: none;
+		box-shadow: none;
+		background-color: inherit;
+		color: $color-text;
+		font-weight: bold;
+		border-bottom: 1.5px solid $color-text-bright;
+	}
+}
