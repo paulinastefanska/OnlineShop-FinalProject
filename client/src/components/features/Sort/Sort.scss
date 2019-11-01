@@ -1,8 +1,6 @@
 @import '../../../styles/settings.scss';
 
 .sort-by {
-	margin-bottom: 1.6rem;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -15,7 +13,7 @@
 		outline: none;
 		box-shadow: none;
 		padding: 0;
-		margin: 0.6rem 0 0 0.6rem;
+		margin: 0 0 0.6rem 0.6rem;
 	}
 	.btn:hover {
 		border-bottom: 1.5px solid $color-light-blue;
@@ -30,5 +28,10 @@
 		color: $color-text;
 		font-weight: bold;
 		border-bottom: 1.5px solid $color-text-bright;
+	}
+	.counter {
+		margin-top: 1rem;
+		border-top: 1px solid $color-text-light;
+		font-size: $base-size;
 	}
 }

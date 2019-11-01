@@ -1,14 +1,14 @@
 @import '../../../styles/settings.scss';
 
 .product-summary {
-  margin: 10px;
+  margin: 15px;
   transition: ease .2s;
   cursor: pointer;
   padding: 0;
   &:hover{
   	border-radius: $radius;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    transform: scale(1.05);
+    transform: scale(1.08);
   } 
 }
 .badge {
