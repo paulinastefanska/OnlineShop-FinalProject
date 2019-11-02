@@ -52,8 +52,8 @@ const initialState = {
     success: null,
   },
   singleProduct: [],
-  key: "",
-  direction: "",
+  key: '',
+  direction: '',
   amount: 0,
   productsPerPage: 6,
   productsPage: 1,
@@ -63,7 +63,7 @@ const initialState = {
 
 export default function reducer(statePart = initialState, action = {}) {
   switch (action.type) {
-  	case LOAD_PRODUCTS:
+    case LOAD_PRODUCTS:
       return { ...statePart, data: action.payload };
     case LOAD_SINGLE_PRODUCT:
       return { ...statePart, singleProduct: action.payload };
