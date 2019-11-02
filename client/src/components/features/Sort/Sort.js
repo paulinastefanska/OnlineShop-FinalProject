@@ -12,7 +12,7 @@ const Sort = ({ sortOptions }) =>  {
 
   return (
     <Container className="sort-by">
-      <p>Sort by:</p>
+      <p>Sort page:</p>
       <Button onClick={() => handleOnClick('name', 'asc')}> Name: A to Z </Button> 
       <Button onClick={() => handleOnClick('name', 'desc')}> Name: Z to A </Button> 
       <Button onClick={() => handleOnClick('price', 'asc')}> Price: low to high </Button> 
