@@ -3,20 +3,20 @@
 .pagination {
   display: flex;
   justify-content: flex-end;
-  margin-top: 15px;
+  margin: 15px 20px 0 0;
 
   &__list {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    font-size: $base-size * 1.5;
+    font-size: $base-size * 1.4;
     padding: 0;
 
     &__item {
       width: $base-size * 2;
       height: $base-size * 2;
       margin: $base-size / 2;
-      padding: 20px;
+      padding: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
