@@ -8,7 +8,7 @@ const loadTestData = async () => {
       tag: 'new',
       img: { src: '../../../images/prod03.jpg'},
       name: 'Apple iMac 27" Retina',
-      price: '$1729.00',
+      price: 1729.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -16,7 +16,7 @@ const loadTestData = async () => {
       tag: 'last one',
       img: { src: '../../../images/prod05.jpg'},
       name: 'DJI Mavic 2 Pro Combo',
-      price: '$1729.00',
+      price: 1729.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -24,7 +24,7 @@ const loadTestData = async () => {
       tag: 'new',
       img: { src: '../../../images/prod01.jpg'},
       name: 'GoPro Hero 7 Black',
-      price: '$359.99',
+      price: 359.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -32,7 +32,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod06.jpg'},
       name: 'DJI Phantom 4 Pro',
-      price: '$1765.00',
+      price: 1765.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -40,7 +40,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod04.jpg'},
       name: 'Apple iPhone 11 Pro Max',
-      price: '$1099.99',
+      price: 1099.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -48,7 +48,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod02.jpg'},
       name: 'GoPro Hero 7 Black Limited',
-      price: '$389.99',
+      price: 389.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -56,7 +56,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod01.jpg'},
       name: 'GoPro Hero 7 Black',
-      price: '$359.99',
+      price: 359.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -64,7 +64,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod03.jpg'},
       name: 'Apple iMac 27" Retina',
-      price: '$1729.00',
+      price: 1729.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -72,7 +72,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod05.jpg'},
       name: 'DJI Mavic 2 Pro Combo',
-      price: '$1729.00',
+      price: 1729.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -80,7 +80,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod06.jpg'},
       name: 'DJI Phantom 4 Pro',
-      price: '$1765.00',
+      price: 1765.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -88,7 +88,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod04.jpg'},
       name: 'Apple iPhone 11 Pro Max',
-      price: '$1099.99',
+      price: 1099.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
     {
@@ -96,7 +96,7 @@ const loadTestData = async () => {
       tag: '',
       img: { src: '../../../images/prod02.jpg'},
       name: 'GoPro Hero 7 Black Limited',
-      price: '$389.99',
+      price: 389.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
     },
   ];

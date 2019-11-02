@@ -18,7 +18,7 @@ export class ProductSummary  extends React.Component  {
             <CardImg src={img.src} alt="item"/>
             <CardBody>
               <CardTitle>{name}</CardTitle>
-              <CardSubtitle>{price}</CardSubtitle>
+              <CardSubtitle>${price}</CardSubtitle>
             </CardBody>
           </Card>
         </Link>
@@ -32,7 +32,7 @@ ProductSummary.propTypes = {
   tag: PropTypes.string,
   img: PropTypes.object,
   name: PropTypes.string,
-  price: PropTypes.string,
+  price: PropTypes.number,
 };
 
 export default ProductSummary;

@@ -55,7 +55,7 @@ Products.propTypes = {
       id: PropTypes.string.isRequired,
       img: PropTypes.object.isRequired,
       name: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
       desc: PropTypes.string.isRequired,
     })
   ),

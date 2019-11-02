@@ -32,7 +32,7 @@ class SingleProduct extends React.Component {
                     <Col md={6}>  
                       <CardBody>
                         <CardTitle>{products[0].name}</CardTitle>
-                        <CardSubtitle>{products[0].price}</CardSubtitle>
+                        <CardSubtitle>${products[0].price}</CardSubtitle>
                         <CardText>{products[0].desc}</CardText>
                       </CardBody>
                       <Button color="info">
@@ -64,7 +64,7 @@ SingleProduct.propTypes = {
       tag: PropTypes.string.isRequired,
       img: PropTypes.object.isRequired,
       name: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
       desc: PropTypes.string.isRequired,
     })
   ),

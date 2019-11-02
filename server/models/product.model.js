@@ -6,7 +6,7 @@ const Product = new Schema({
     tag: { type: 'String', required: false },
     img: { type: 'Object', required: true },
     name: { type: 'String', required: true },
-    price: { type: 'String', required: true },
+    price: { type: 'Number', required: true },
     desc: { type: 'String', required: true },
 });
 
