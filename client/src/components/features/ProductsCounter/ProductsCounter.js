@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 
 class ProductsCounter extends React.Component {
 
@@ -6,7 +7,9 @@ class ProductsCounter extends React.Component {
   	const { counter } = this.props;
 
     return (
-      <div className="counter">Products available: { counter > 0 ? counter : ' 0 ' }</div>
+      <Container>
+        <div className="counter">Products available: { counter > 0 ? counter : ' 0 ' }</div>
+      </Container>
     );
   }
 

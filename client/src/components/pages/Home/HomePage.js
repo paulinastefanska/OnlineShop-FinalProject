@@ -4,7 +4,9 @@ import Products from '../../features/Products/ProductsContainer';
 import TopCarousel from '../../features/Carousel/Carousel';
 import ModalCode from '../../features/Modal/Modal';
 import Sort from '../../features/Sort/SortContainer';
+import ProductsCounter from '../../features/ProductsCounter/ProductsCounterContainer';
 
+import './HomePage.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap'; 
 
@@ -15,6 +17,7 @@ const HomePage = () => (
     <Row>
         <Col sm={4}>
           <Sort />
+          <ProductsCounter />
         </Col>
         <Col sm={8}>
           <Products />
