@@ -1,0 +1,22 @@
+@import '../../../styles/settings.scss';
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3rem 1rem;
+	font-size: $base-size * 1.1;
+	margin-top: 2.4rem;
+	.copy {
+		margin: 0;
+	}
+	&-menu {
+		list-style: none;
+		display: flex;
+		margin: 0;
+		text-transform: uppercase;
+		li {
+			padding-left: 1.4rem;
+		}
+	}
+}
