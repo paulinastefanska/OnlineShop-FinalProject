@@ -1,6 +1,12 @@
 .carousel {
 	margin-bottom: 3.8rem;
+	&-inner {
+		border-radius: .25rem;
+	}
 }
-.carousel-inner {
-	border-radius: .25rem;
+
+@media (max-width: 767px) {
+	.carousel {
+		margin-bottom: 2rem;
+	}
 }

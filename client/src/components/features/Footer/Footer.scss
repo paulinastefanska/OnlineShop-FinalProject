@@ -25,6 +25,7 @@
 	.footer {
 		flex-direction: column-reverse;
 		margin-top: 0;
+		font-size: $base-size;
 		&-menu {
 			padding: 0;
 			justify-content: space-around;
@@ -36,11 +37,14 @@
 			display: flex;
 			justify-content: center;
 			margin-top: 0.4rem;
+			a {
+				padding-left: 0.5rem;
+			}
 		}
 	}
 }
 
-@media (max-width: 379px) {
+@media (max-width: 375px) {
 	.footer-menu {
 		display: none;
 	}

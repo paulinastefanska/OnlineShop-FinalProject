@@ -12,16 +12,36 @@
 		height: 100%;
 		font-size: $base-size * 1.5;
 	}
+	&-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-code {
+		font-size: 1.4rem;
+		font-weight: bold;
+		width: 10rem;
+		text-align: center;
+		margin-left: 1rem;
+	}
 }
-.discount-text {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.discount-code {
-	font-size: 1.4rem;
-	font-weight: bold;
-	width: 10rem;
-	text-align: center;
-	margin-left: 1rem;
+
+@media (max-width: 767px) {
+	.discount {
+		height: 3rem;
+		border: none;
+		margin: 0;
+		padding: 0;
+		button {
+			width: 80%;
+			height: auto;
+			font-size: $base-size;;
+		}
+		&-text, &-code {
+			font-size: $base-size;
+		}
+	}
+	.modal-title {
+		font-size: $base-size;
+	}
 }

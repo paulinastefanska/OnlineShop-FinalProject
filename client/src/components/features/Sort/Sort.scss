@@ -31,3 +31,9 @@
 		border-bottom: 1.5px solid $color-text-bright;
 	}
 }
+
+@media (max-width: 767px) {
+	.sort-by, .btn {
+		font-size: $base-size;
+	}
+}
