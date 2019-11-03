@@ -11,7 +11,7 @@
   
   li {
     margin: 0 $base-size;
-    a {
+    .navlink {
       border-bottom: 2px solid $color-text-bright;
       &:hover {
         border-bottom: 2px solid $color-light-blue;
@@ -19,4 +19,13 @@
     }
   }
   
+}
+
+@media (max-width: 767px) {
+  .main-menu.none {
+    display: none;
+  }
+  .main-menu.mobile-menu {
+    display: flex;
+  }
 }

@@ -1,24 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
+import { NavLink } from 'react-router-dom';
+
 import './MainMenu.scss';
 
-const MainMenu = ({ links, location }) => (
-  <ul className="main-menu">
-    { links.map((link, index) =>
-      <li key={index}>
-        <Link className={(location.pathname === link.path && 'active') || ''} to={link.path}>{link.title}</Link>
-      </li>
-    )}
-  </ul>
-);
+const MainMenu = (props) => {
+  const { showMenu } = props;
+
+  return (
+    <ul className={"main-menu " + (showMenu ? "mobile-menu" : "none")}>
+      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/" className="navlink" activeClassName="active">Home</NavLink></li>
+      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/faq" className="navlink" activeClassName="active">Faq</NavLink></li>
+      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/storepolicy" className="navlink" activeClassName="active">Store Policy</NavLink></li>
+      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/contact" className="navlink" activeClassName="active">Contact</NavLink></li>
+    </ul>
+  );
+}
 
 MainMenu.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.shape({
-    path: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  })),
-};
+    showMenu: PropTypes.bool,
+}
 
-export default withRouter(props => <MainMenu {...props}/>);
+export default MainMenu;

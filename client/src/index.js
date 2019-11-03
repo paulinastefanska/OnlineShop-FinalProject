@@ -9,7 +9,7 @@ import './styles/global.scss';
 import 'animate.css/animate.min.css';
 
 const Root = () => (
-	<Provider store={store}>
+  <Provider store={store}>
     <Router>
       <App />
     </Router>

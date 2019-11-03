@@ -7,3 +7,12 @@
   font-size: $base-size * 1.8;
   color: $color-text;
 }
+.burger {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.burger {
+		display: inline-block;
+	}
+}
