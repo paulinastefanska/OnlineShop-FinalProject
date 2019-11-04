@@ -12,10 +12,10 @@ const NavBar = (props) => {
   const { showMenu, toggleMenu } = props;
 
   return (
-    <nav className={"navbar " + (showMenu ? "nav-mobile" : "")}>
+    <nav className={"navbar" + (showMenu ? " nav-mobile" : "")}>
       <Logo toggleMenu={toggleMenu} />
       <div className="navbar-wrapper">
-        <MainMenu showMenu={showMenu} />
+        <MainMenu />
         <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
       </div>
     </nav>
@@ -24,8 +24,8 @@ const NavBar = (props) => {
 }
 
 NavBar.propTypes = {
-    showMenu: PropTypes.bool,
-    toggleMenu: PropTypes.func
+    showMenu: PropTypes.bool.isRequired,
+    toggleMenu: PropTypes.func.isRequired,
 }
 
 export default NavBar;
