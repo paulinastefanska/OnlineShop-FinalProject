@@ -1,8 +1,9 @@
 import React from 'react';
+import Cart from '../../features/Cart/Cart';
 
 const CartPage = () => (
   <div>
-    <h1>Your Cart</h1>
+    <Cart />
   </div>
 );
 
