@@ -2,8 +2,9 @@ import React from 'react';
 import CartOrder from './CartOrder';
 import CartSummary from './CartSummary';
 
-// Import styles
 import "./Cart.scss";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Row, Col, Button } from 'reactstrap';
 
 export default class Cart extends React.Component {
   constructor(props) {
@@ -24,12 +25,12 @@ export default class Cart extends React.Component {
       return (
         <div className="cart">
           <CartOrder />
-          <div className="row">
-            <div className="col-8"></div>
-            <div className="col-4">
-              <button onClick={() => { this.initialSummary() }}>Pay</button>
-            </div>
-          </div>
+          <Row>
+            <Col md={8}></Col>
+            <Col md={4}>
+              <Button onClick={() => { this.initialSummary() }}>Pay</Button>
+            </Col>
+          </Row>
         </div>
       );
     }
