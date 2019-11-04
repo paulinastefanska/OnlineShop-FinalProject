@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 import Logo from '../../common/Logo/Logo';
 import MainMenu from '../../layout/MainMenu/MainMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingBag, faBars } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.scss'
 
 const NavBar = (props) => {
@@ -13,9 +13,10 @@ const NavBar = (props) => {
 
   return (
     <nav className={"navbar" + (showMenu ? " nav-mobile" : "")}>
-      <Logo toggleMenu={toggleMenu} />
+      <Logo />
       <div className="navbar-wrapper">
         <MainMenu />
+        <FontAwesomeIcon icon={faBars} className="burger" onClick={toggleMenu} />
         <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
       </div>
     </nav>
