@@ -9,22 +9,24 @@ const FaqPage = () => (
 <Container>
 		<PageTitle>FAQ</PageTitle>
 		<div className="storepolicy-wrapper">
-			<p>Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			</p>
-			<p>A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			<p>Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+			<p>
+				A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 				eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
 				lobortis elementum nibh tellus molestie nunc. Amet venenatis urna cursus
 				eget nunc scelerisque viverra. Odio euismod lacinia at quis risus.
 			</p>
-			<p>Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
-				lobortis elementum nibh tellus molestie nunc.
-			</p>
-			<p>A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
+			<p>Q: Eu lobortis elementum nibh tellus molestie nunc?</p>
+			<p>
+				A: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
 				lobortis elementum nibh tellus molestie nunc. Amet venenatis urna cursus
-				eget nunc scelerisque viverra. Odio euismod lacinia at quis risus.
+				eget nunc scelerisque viverra. Odio euismod lacinia at quis.
+			</p>
+			<p>Q: Odio euismod lacinia at quis?</p>
+			<p>
+				A: Eu lobortis elementum nibh tellus molestie nunc. Amet venenatis urna cursus
+				eget nunc scelerisque viverra. Odio euismod lacinia at quis. Sed do eiusmod 
+				tempor incididunt ut labore et dolore magna aliqua.
 			</p>
 		</div>
 	</Container>
