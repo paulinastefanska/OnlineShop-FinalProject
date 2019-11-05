@@ -1,0 +1,27 @@
+@import '../../../styles/settings.scss';
+
+.contact-wrapper {
+	padding: 1rem;
+	.social-media a {
+		padding: 1rem;
+		font-size: $base-size * 2.2;
+		color: $color-text-light;
+		transition: ease .2s;
+		&:hover {
+			color: $color-light-blue;
+		}
+	}
+}
+@media (max-width: 387px) {
+	.contact {
+		text-align: center;
+		.contact-wrapper {
+			font-size: $base-size;
+			.social-media {
+				a {
+					padding: 0.5rem;
+				}
+			}
+		}
+	}
+}
