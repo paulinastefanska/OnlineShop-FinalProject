@@ -21,8 +21,8 @@ export const getProductsSort = ({ products }) => {
   });
   return sortProducts;
 };
-export const getMenuState = products => products.showMenu;
-export const getCart = products => products.cart;
+export const getMenuState = ({ products }) => products.showMenu;
+export const getCart = ({ products }) => products.cart;
 
 /* ACTIONS */
 

@@ -12,12 +12,12 @@ const NavBar = (props) => {
   const { showMenu, toggleMenu } = props;
 
   return (
-    <nav className={"navbar" + (showMenu ? " nav-mobile" : "")}>
+    <nav className="navbar">
       <Logo />
-      <div className="navbar-wrapper">
-        <MainMenu />
-        <FontAwesomeIcon icon={faBars} className="burger" onClick={toggleMenu} />
+      <div className={"navbar-wrapper" + (showMenu ? " nav-mobile" : "")}>
+        <MainMenu showMenu={showMenu}/>
         <NavLink className="cart-icon" to="/cart" activeClassName="active"><FontAwesomeIcon icon={faShoppingBag} /></NavLink>
+        <FontAwesomeIcon icon={faBars} className="burger" onClick={toggleMenu} />
       </div>
     </nav>
   );

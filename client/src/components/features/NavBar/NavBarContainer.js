@@ -3,7 +3,7 @@ import { toggleMenu, getMenuState } from '../../../redux/productRedux';
 import NavBar from './NavBar';
 
 const mapStateToProps = state => ({
-    openMenu: getMenuState(state),
+    showMenu: getMenuState(state),
 });
 
 const mapDispatchToProps = dispatch => ({

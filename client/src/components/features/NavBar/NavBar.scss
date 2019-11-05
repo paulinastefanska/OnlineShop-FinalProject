@@ -24,3 +24,18 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 767px) {
+	.nav-mobile {
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		width: 100%;
+	}
+	.cart-icon { 
+		display: none;
+	}
+	.burger {
+		color: $color-text;
+		font-size: $base-size * 1.8;
+	}
+}
