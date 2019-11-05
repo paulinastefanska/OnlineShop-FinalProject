@@ -1,0 +1,10 @@
+@import '../../../styles/settings.scss';
+
+.storepolicy-wrapper {
+	padding: 1rem;
+}
+@media (max-width: 387px) {
+	.storepolicy-wrapper {
+		font-size: $base-size;
+	}
+}

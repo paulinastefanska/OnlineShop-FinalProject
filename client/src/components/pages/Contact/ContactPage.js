@@ -6,7 +6,7 @@ import { Container } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import './Contact.scss';
+import './ContactPage.scss';
 
 const ContactPage = () => (
 	<Container className="contact">
