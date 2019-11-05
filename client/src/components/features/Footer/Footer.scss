@@ -1,11 +1,16 @@
 @import '../../../styles/settings.scss';
 
 .footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	max-width: 1000px;
 	display: flex;
 	justify-content: space-between;
 	padding: 1.3rem 1rem;
 	font-size: $base-size * 1.1;
-	margin-top: 2.4rem;
+	margin: 0 auto;
 	.copy {
 		margin: 0;
 	}
