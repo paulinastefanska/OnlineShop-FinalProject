@@ -22,7 +22,12 @@ export const getProductsSort = ({ products }) => {
   return sortProducts;
 };
 export const getMenuState = ({ products }) => products.showMenu;
+
 export const getCart = ({ products }) => products.cart;
+export const getDiscountCode = ({ products }) => products.discountCode;
+export const getDiscountStatus = ({ products }) => products.discountActive;
+export const getTotalPrice = ({ products }) => products.totalPrice;
+export const getOrderStatus = ({ products }) => products.orderStatus;
 
 /* ACTIONS */
 
@@ -37,9 +42,12 @@ export const SORT_OPTIONS = createActionName('SORT_OPTIONS');
 export const TOGGLE_MENU = createActionName('TOGGLE_MENU');
 
 export const ADD_TO_CART = createActionName('ADD_TO_CART');
-export const CART_QTY = createActionName('CART_QTY');
-export const REMOVE_QTY = createActionName('REMOVE_QTY');
-export const REMOVE_PRODUCT = createActionName('REMOVE_PRODUCT');
+export const DELETE_FROM_CART = createActionName('DELETE_FROM_CART');
+export const PLUS_QTY = createActionName('PLUS_QTY');
+export const MINUS_QTY = createActionName('MINUS_QTY');
+export const MAKE_DISCOUNT = createActionName('MAKE_DISCOUNT');
+export const CALCULATE_PRICE = createActionName('CALCULATE_PRICE');
+export const MAKE_ORDER = createActionName('MAKE_ORDER');
 
 
 export const loadProducts = payload => ({ payload, type: LOAD_PRODUCTS });
@@ -53,9 +61,14 @@ export const sortOptions = payload => ({ payload, type: SORT_OPTIONS });
 export const toggleMenu = () => ({ type: TOGGLE_MENU });
 
 export const addToCart = payload => ({ payload, type: ADD_TO_CART });
-export const cartQty = payload => ({ payload, type: CART_QTY });
-export const removeQty = payload => ({ payload, type: REMOVE_QTY });
-export const removeProduct = payload => ({ payload, type: REMOVE_PRODUCT });
+export const deleteFromCart = payload => ({ payload, type: DELETE_FROM_CART });
+export const plusQty = id => ({ id, type: PLUS_QTY });
+export const minusQty = id => ({ id, type: MINUS_QTY });
+export const makeDiscount = () => ({ type: MAKE_DISCOUNT });
+export const calculatePrice = () => ({ type: CALCULATE_PRICE });
+export const makeOrder = () => ({ type: MAKE_ORDER });
+
+
 
 /* INITIAL STATE */
 
@@ -73,8 +86,12 @@ const initialState = {
   productsPerPage: 6,
   productsPage: 1,
   showMenu: false,
-  productAdd: [],
-  summary: 0,
+  cart: [],
+  discount: 1,
+  discountCode: 'SDFV86F',
+  discountActive: false,
+  totalPrice: 0,
+  orderStatus: false,
 };
 
 /* REDUCER */
@@ -107,48 +124,58 @@ export default function reducer(statePart = initialState, action = {}) {
         direction: action.payload.direction,
       };
     case TOGGLE_MENU:
-      let menuState = !statePart.showMenu;
+      const menuState = !statePart.showMenu;
       return {...statePart, 
         showMenu: menuState
       };
 
+
     case ADD_TO_CART:
-      let productAdd = [...statePart.productAdd, action.payload];
-      statePart.productAdd.map((products) => {
-        if (products.id === action.payload.id) {
-          products.qty += 1;
-          productAdd = [...statePart.productAdd]
-        }
-      })
-      return { 
-        productAdd: productAdd, 
-        summary: statePart.summary + action.payload.price
-      };
-    case CART_QTY:
-      statePart.productAdd.map((products) => {
-        if (products.id === action.payload.id) {
-          products.qty += 1
-        }
-      })
+      const addedProduct = action.payload;
+      addedProduct.qtyCount += 1;
       return {
-        productAdd: [...statePart.productAdd],
-        summary: statePart.summary + action.payload.price,
+        ...statePart, cart: statePart.cart.concat(addedProduct), orderStatus: false
       };
-    case REMOVE_QTY:
-      statePart.productAdd.map((products) => {
-        if (products.id === action.payload.id) {
-          products.qty -= 1
-        }
-      })
+    case DELETE_FROM_CART:
+      const updateCart = statePart.cart.filter(el => el.id !== action.payload);
       return {
-        productAdd: statePart.productAdd.filter(function (object) { return object.qty !== 0 }),
-        summary: statePart.summary - action.payload.price
+        ...statePart, cart: updateCart
       };
-    case REMOVE_PRODUCT:
+    case PLUS_QTY:
+      const productPlus = statePart.cart.find(el => el.id === action.id);
+      productPlus.qtyCount += 1;
+      const plusCartUpdate = statePart.cart.map(el => el.id === action.id ? productPlus : el);
       return {
-        productAdd: [],
-        summary: 0
+        ...statePart, cart: plusCartUpdate
       };
+    case MINUS_QTY:
+      const productMinus = statePart.cart.find(el => el.id === action.id);
+      productMinus.qtyCount -= 1;
+      const minusCartUpdate = statePart.cart.map(el => el.id === action.id ? productMinus : el);
+      return {
+        ...statePart, cart: minusCartUpdate
+      };
+    case MAKE_DISCOUNT:
+      return {
+        ...statePart, discount: 0.9, discountActive: true
+      }
+    case CALCULATE_PRICE:
+      let roundPrice;
+      if(statePart.cart.length !== 0) {
+        const allPrices = statePart.cart.map(el => el.item ? el.price * el.qtyCount * 1.1 : el.price * el.qtyCount);
+        const sumPrices = statePart.discountActive ? allPrices.reduce((prev, curr) => prev + curr) * statePart.discount : allPrices.reduce((prev, curr) => prev + curr);
+        roundPrice = parseFloat(sumPrices.toFixed(2));
+      } else {
+        roundPrice = 0;
+      }
+      return {
+        ...statePart, totalPrice: roundPrice
+      }
+    case MAKE_ORDER:
+      return {
+        ...statePart, orderStatus: true, cart: [], totalPrice: 0
+      }
+
 
     default:
       return statePart;

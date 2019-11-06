@@ -1,0 +1,23 @@
+@import '../../../styles/settings.scss';
+
+.cart-wrapper {
+	padding: 1rem;
+	font-size: $base-size*1.2;
+}
+.cart-product {
+	align-items: center;
+	margin-bottom: 0.7rem;
+	.items-qty {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+.cart-summary {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	input {
+		width: auto;
+	}
+}

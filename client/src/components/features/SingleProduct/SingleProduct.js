@@ -15,6 +15,15 @@ class SingleProduct extends React.Component {
     loadProducts(match.params.id);
   }
 
+  handleAddToCart = () => {
+    const { addToCart, products, cart, plusQty, calculatePrice } = this.props;
+    const match = this.props.match.params.id;
+    const cartCheck = cart.filter(el => el.id === match);
+
+    cartCheck.length === 0 ? addToCart(products[0]) : plusQty(match);
+    calculatePrice();
+  }
+
   render() {
     const { products, request } = this.props;
 
@@ -35,7 +44,7 @@ class SingleProduct extends React.Component {
                         <CardSubtitle>${products[0].price}</CardSubtitle>
                         <CardText>{products[0].desc}</CardText>
                       </CardBody>
-                      <Button color="info">
+                      <Button color="info" onClick={this.handleAddToCart}>
                           Add to cart
                       </Button>
                     </Col>
@@ -69,6 +78,9 @@ SingleProduct.propTypes = {
     })
   ),
   loadProducts: PropTypes.func.isRequired,
+  cart: PropTypes.array.isRequired,
+  addToCart: PropTypes.func.isRequired,
+  plusQty: PropTypes.func.isRequired,
 };
 
 export default withRouter(props => <SingleProduct {...props}/>);
