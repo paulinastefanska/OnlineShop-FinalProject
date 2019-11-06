@@ -14,10 +14,11 @@ const MainMenu = (props) => {
 
   return (
     <ul className={menuClasses}>
-      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/" className="navlink" activeClassName="active">Home</NavLink></li>
-      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/faq" className="navlink" activeClassName="active">Faq</NavLink></li>
-      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/storepolicy" className="navlink" activeClassName="active">Store Policy</NavLink></li>
-      <li className={showMenu ? "link-mobile" : ""}><NavLink exact to="/contact" className="navlink" activeClassName="active">Contact</NavLink></li>
+      <li><NavLink exact to="/" className="navlink" activeClassName="active">Home</NavLink></li>
+      <li><NavLink exact to="/faq" className="navlink" activeClassName="active">Faq</NavLink></li>
+      <li><NavLink exact to="/storepolicy" className="navlink" activeClassName="active">Store Policy</NavLink></li>
+      <li><NavLink exact to="/contact" className="navlink" activeClassName="active">Contact</NavLink></li>
+      <li className="cart"><NavLink exact to="/cart" className="navlink" activeClassName="active">Cart</NavLink></li>
     </ul>
   );
 }

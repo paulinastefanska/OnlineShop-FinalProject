@@ -13,15 +13,13 @@
 	}
 }
 @media (max-width: 387px) {
-	.contact {
-		text-align: center;
-		.contact-wrapper {
-			font-size: $base-size;
-			.social-media {
-				a {
-					padding: 0.5rem;
-				}
+	.contact-wrapper {
+		font-size: $base-size;
+		.social-media {
+			a {
+				padding: 0.5rem;
 			}
 		}
 	}
+
 }

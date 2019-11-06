@@ -27,8 +27,9 @@
 
 @media (max-width: 767px) {
 	.nav-mobile {
-		flex-direction: column-reverse;
-		align-items: flex-end;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		width: 100%;
 	}
 	.cart-icon { 
@@ -37,5 +38,8 @@
 	.burger {
 		color: $color-text;
 		font-size: $base-size * 1.8;
+	}
+	.burger.active {
+		color: $color-light-blue;
 	}
 }
