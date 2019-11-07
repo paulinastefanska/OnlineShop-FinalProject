@@ -6,7 +6,7 @@ import PageTitle from '../../common/PageTitle/PageTitle';
 import CartProduct from './CartProduct';
 import "./Cart.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Alert, Button, Input } from 'reactstrap';
+import { Container, Alert, Button, InputGroup, InputGroupAddon, Input } from 'reactstrap';
 
 class Cart extends React.Component {
 
@@ -51,9 +51,19 @@ class Cart extends React.Component {
             />) : <Alert color="danger">Your shopping cart is empty!</Alert> }
         </div>
         <div className="cart-summary">
-          <Input placeholder="discount code" />
+          <InputGroup>
+            <Input placeholder="discount code" />
+            <InputGroupAddon addonType="append">
+              <Button color="info">Done!</Button>
+            </InputGroupAddon>
+          </InputGroup>
           <p>Total: ${price.toFixed(2)}</p>
-          <Button color="info">Summary</Button>
+
+          {cart.length !== 0 ? 
+          <Button color="info">Summary</Button> :
+          <Button color="info" disabled>Summary</Button> 
+          }
+          
         </div>
       </Container>
     );
