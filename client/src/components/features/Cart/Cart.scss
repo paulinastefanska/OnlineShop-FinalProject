@@ -2,14 +2,14 @@
 
 .cart-wrapper {
 	padding: 1rem;
-	font-size: $base-size*1.2;
-}
-.cart-product {
-	align-items: center;
-	margin-bottom: 0.7rem;
-	.items-qty {
-		display: flex;
-		flex-direction: row-reverse;
+	font-size: $base-size*1.1;
+	.cart-product {
+		align-items: center;
+		margin-bottom: 0.7rem;
+		.product-price {
+			display: flex;
+			justify-content: center;
+		}
 	}
 }
 .cart-summary {
@@ -19,5 +19,9 @@
 	align-items: flex-end;
 	input {
 		width: auto;
+		max-width: 8.5rem;
+		text-align: center;
+		margin-bottom: 10px;
 	}
 }
+

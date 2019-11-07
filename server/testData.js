@@ -10,7 +10,7 @@ const loadTestData = async () => {
       name: 'Apple MacBook Pro 13"',
       price: 2362.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '2234a',
@@ -19,7 +19,7 @@ const loadTestData = async () => {
       name: 'DJI Mavic Mini',
       price: 589.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '3234a',
@@ -28,7 +28,7 @@ const loadTestData = async () => {
       name: 'GoPro Hero 8 Black',
       price: 498.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '4234a',
@@ -37,7 +37,7 @@ const loadTestData = async () => {
       name: 'Apple iPhone 11 Pro Max',
       price: 1689.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '5234a',
@@ -46,7 +46,7 @@ const loadTestData = async () => {
       name: 'DJI Mavic 2 Pro Combo',
       price: 1729.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '6234a',
@@ -55,7 +55,7 @@ const loadTestData = async () => {
       name: 'Apple iMac 27" Retina',
       price: 1729.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '7234a',
@@ -64,7 +64,7 @@ const loadTestData = async () => {
       name: 'GoPro Hero 7 Black',
       price: 359.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '8234a',
@@ -73,7 +73,7 @@ const loadTestData = async () => {
       name: 'DJI Phantom 4 Pro',
       price: 1765.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '9234a',
@@ -82,7 +82,7 @@ const loadTestData = async () => {
       name: 'Apple iPhone 11 Pro',
       price: 1364.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '10234a',
@@ -91,7 +91,7 @@ const loadTestData = async () => {
       name: 'DJI Osmo Action',
       price: 392.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '11234a',
@@ -100,7 +100,7 @@ const loadTestData = async () => {
       name: 'GoPro Hero 7 Black Limited',
       price: 389.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
     {
       id: '122341',
@@ -109,7 +109,7 @@ const loadTestData = async () => {
       name: 'GoPro Max',
       price: 629.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque id dolor egestas rutrum. Vivamus ullamcorper tincidunt sapien, eu lobortis quam dictum et. Praesent faucibus aliquet consectetur. Etiam tincidunt cursus sapien sed placerat. Vestibulum purus magna, convallis quis leo ac, luctus congue arcu. Mauris volutpat est in elementum sagittis.',
-      qty: 1,
+      qty: 0,
     },
   ];
 

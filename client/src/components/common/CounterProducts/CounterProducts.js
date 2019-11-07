@@ -1,6 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
+import './CounterProducts.scss';
+
 class CounterProducts extends React.Component {
 
     deleteProduct = () => {
@@ -22,13 +24,13 @@ class CounterProducts extends React.Component {
         const { products } = this.props;
 
         return (
-            <div>
-                <div className="items-qty">
-                    <button onClick={ this.minus }>-</button>
-                    <p>{ products.qtyCount }</p>
+            <div className="qty-items">
+                <div className="qty-buttons">
+                    <button className="qty-minus" onClick={ this.minus }>-</button>
+                    <span className="qty-product">{ products.qty }</span>
                     <button onClick={ this.plus }>+</button>
                 </div>
-                <button onClick={ this.deleteProduct }>delete</button>
+                <button className="btn-delete" onClick={ this.deleteProduct }>delete</button>
             </div>
         );
     }

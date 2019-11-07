@@ -11,7 +11,7 @@ const CartProduct = (props) => {
     const { products, minusFromCounter, addToCounter, handleDeleteProduct } = props;
 
     const short = products.desc.split('');
-    const lastIndex = short.lastIndexOf(' ', 130);
+    const lastIndex = short.lastIndexOf(' ', 115);
     const shortDesc = products.desc.substr(0, lastIndex) + '...';
 
     return (
@@ -21,12 +21,12 @@ const CartProduct = (props) => {
                     <img alt="item" src={`../../../images/${products.img}`} />
                 </Link>
             </Col>
-            <Col md={7}>
-                <h4>{ products.name }</h4>
+            <Col md={6}>
+                <h5>{ products.name }</h5>
                 <p>{ shortDesc }</p>
             </Col>
-            <Col md={2}>${ products.price }</Col>
-            <Col md={1}>
+            <Col md={2} className="product-price">${ products.price }</Col>
+            <Col md={2}>
                 <CounterProducts 
                     products={ products } 
                     minusFromCounter={ minusFromCounter } 

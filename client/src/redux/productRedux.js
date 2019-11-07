@@ -132,7 +132,7 @@ export default function reducer(statePart = initialState, action = {}) {
 
     case ADD_TO_CART:
       const addedProduct = action.payload;
-      addedProduct.qtyCount += 1;
+      addedProduct.qty += 1;
       return {
         ...statePart, cart: statePart.cart.concat(addedProduct), orderStatus: false
       };
@@ -143,14 +143,14 @@ export default function reducer(statePart = initialState, action = {}) {
       };
     case PLUS_QTY:
       const productPlus = statePart.cart.find(el => el.id === action.id);
-      productPlus.qtyCount += 1;
+      productPlus.qty += 1;
       const plusCartUpdate = statePart.cart.map(el => el.id === action.id ? productPlus : el);
       return {
         ...statePart, cart: plusCartUpdate
       };
     case MINUS_QTY:
       const productMinus = statePart.cart.find(el => el.id === action.id);
-      productMinus.qtyCount -= 1;
+      productMinus.qty -= 1;
       const minusCartUpdate = statePart.cart.map(el => el.id === action.id ? productMinus : el);
       return {
         ...statePart, cart: minusCartUpdate
@@ -162,7 +162,7 @@ export default function reducer(statePart = initialState, action = {}) {
     case CALCULATE_PRICE:
       let roundPrice;
       if(statePart.cart.length !== 0) {
-        const allPrices = statePart.cart.map(el => el.item ? el.price * el.qtyCount * 1.1 : el.price * el.qtyCount);
+        const allPrices = statePart.cart.map(el => el.item ? el.price * el.qty * 1.1 : el.price * el.qty);
         const sumPrices = statePart.discountActive ? allPrices.reduce((prev, curr) => prev + curr) * statePart.discount : allPrices.reduce((prev, curr) => prev + curr);
         roundPrice = parseFloat(sumPrices.toFixed(2));
       } else {
