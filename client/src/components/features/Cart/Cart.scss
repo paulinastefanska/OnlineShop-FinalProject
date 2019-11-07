@@ -6,6 +6,9 @@
 	.cart-product {
 		align-items: center;
 		margin-bottom: 0.7rem;
+		img {
+			width: 100%;
+		}
 		.product-price {
 			display: flex;
 			justify-content: center;

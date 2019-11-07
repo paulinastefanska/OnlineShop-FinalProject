@@ -17,8 +17,8 @@ const CartProduct = (props) => {
     return (
         <Row className="cart-product">
             <Col md={2}>
-                <Link target="_blank" to={'product/' + products.id}>
-                    <img alt="item" src={`../../../images/${products.img}`} />
+                <Link to={'product/' + products.id}>
+                    <img src={products.img.src} alt="item" />
                 </Link>
             </Col>
             <Col md={6}>
@@ -31,7 +31,7 @@ const CartProduct = (props) => {
                     products={ products } 
                     minusFromCounter={ minusFromCounter } 
                     addToCounter={ addToCounter } 
-                    handledeleteProduct={ handleDeleteProduct } 
+                    deleteProduct={ handleDeleteProduct } 
                 />
             </Col>
         </Row>

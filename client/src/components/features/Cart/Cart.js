@@ -34,10 +34,6 @@ class Cart extends React.Component {
       calculatePrice();
   }
 
-  onPageChange = (pageNumber) => {
-      this.setState({ page: pageNumber });
-  }
-
   render() {
     const { cart, price, discountCode, discountStatus } = this.props;
 
@@ -48,8 +44,8 @@ class Cart extends React.Component {
           {cart.length !== 0 ? cart.map(el => 
             <CartProduct
                 key={uuid()}
-                minusFromCounter={this.minusQty}
-                addToCounter={this.plusQty}
+                minusFromCounter={this.minusCounter}
+                addToCounter={this.plusCounter}
                 handleDeleteProduct={this.handleDeleteProduct}
                 products={el}
             />) : <Alert color="danger">Your shopping cart is empty!</Alert> }
