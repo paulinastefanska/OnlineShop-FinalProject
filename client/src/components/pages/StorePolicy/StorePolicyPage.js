@@ -6,7 +6,7 @@ import { Container } from 'reactstrap';
 import './StorePolicyPage.scss'
 
 const StorePolicy = () => (
-	<Container>
+	<Container className="storepolicy">
 		<PageTitle>Store Policy</PageTitle>
 		<div className="storepolicy-wrapper">
 			<p>$1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

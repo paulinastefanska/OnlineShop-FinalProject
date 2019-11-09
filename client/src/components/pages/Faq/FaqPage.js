@@ -3,12 +3,12 @@ import React from 'react';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'reactstrap';
-import '../StorePolicy/StorePolicyPage.scss'
+import '../Faq/FaqPage.scss'
 
 const FaqPage = () => (
-<Container>
+	<Container className="faq">
 		<PageTitle>FAQ</PageTitle>
-		<div className="storepolicy-wrapper">
+		<div className="faq-wrapper">
 			<p>Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
 			<p>
 				A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

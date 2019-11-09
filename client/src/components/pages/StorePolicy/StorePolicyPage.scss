@@ -5,7 +5,11 @@
 	text-align: justify;
 }
 @media (max-width: 387px) {
-	.storepolicy-wrapper {
-		font-size: $base-size;
+	.storepolicy {
+		text-align: center;
+		.storepolicy-wrapper {
+			font-size: $base-size;
+		}
 	}
+	
 }

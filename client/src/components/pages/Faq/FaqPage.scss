@@ -1,0 +1,14 @@
+@import '../../../styles/settings.scss';
+
+.faq-wrapper {
+	padding: 1rem;
+}
+
+@media (max-width: 387px) {
+	.faq {
+		text-align: center;
+		.faq-wrapper {
+			font-size: $base-size;
+		}
+	}
+}
