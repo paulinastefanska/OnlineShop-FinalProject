@@ -1,6 +1,7 @@
 import React from 'react';
-import uuid from 'uuidv4';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
+import uuid from 'uuidv4';
 
 import PageTitle from '../../common/PageTitle/PageTitle';
 import Discount from '../../common/Discount/Discount';
@@ -59,7 +60,9 @@ class Cart extends React.Component {
           />
           <p>Total: ${price.toFixed(2)}</p>
           {cart.length !== 0 ? 
-          <Button color="info">Summary</Button> :
+          <Link to={'summary'}>
+            <Button color="info">Summary</Button> 
+          </Link> :
           <Button color="info" disabled>Summary</Button> 
           }
           

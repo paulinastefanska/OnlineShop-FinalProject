@@ -245,3 +245,22 @@ export const loadProductsByPageRequest = (page, productsPerPage) => {
     }
   };
 };
+
+export const cartSummary = (cart, price) => {
+  return async dispatch => {
+
+    dispatch(startRequest());
+    try {
+
+        await axios.post(`${API_URL}/products/summary`, cart);
+        await axios.post(`${API_URL}/products/summary`, price);
+        await new Promise((resolve, reject) => setTimeout(resolve, 2000));
+        
+        dispatch(makeOrder());
+        dispatch(endRequest());
+
+    } catch(e) {
+        dispatch(errorRequest(e.message));
+    }
+}
+}

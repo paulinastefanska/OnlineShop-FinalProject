@@ -9,6 +9,7 @@ import StorePolicy from './components/pages/StorePolicy/StorePolicyPage';
 import Contact from './components/pages/Contact/ContactPage';
 import Cart from './components/pages/Cart/CartPage';
 import SingleProduct from './components/pages/SingleProduct/SingleProductPage';
+import SummaryPage from './components/pages/Summary/SummaryPage';
 import NotFound from './components/pages/NotFound/NotFoundPage';
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
 					<Route path="/contact" component={Contact} />
 					<Route path="/cart" component={Cart} />
 					<Route path="/product/:id" component={SingleProduct} />
+					<Route path="/summary" component={SummaryPage} />
 					<Route component={NotFound} />
 				</Switch>
 			</MainLayout>
