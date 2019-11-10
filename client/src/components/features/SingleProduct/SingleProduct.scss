@@ -10,3 +10,12 @@
 		margin: 1.25rem;
 	}
 }
+
+@media (max-width: 387px) {
+	.single-product {
+		text-align: center;
+		.card-text {
+			font-size: $base-size;
+		}
+	}
+}

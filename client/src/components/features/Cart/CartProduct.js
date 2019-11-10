@@ -11,7 +11,7 @@ const CartProduct = (props) => {
     const { products, minusFromCounter, addToCounter, handleDeleteProduct } = props;
 
     const short = products.desc.split('');
-    const lastIndex = short.lastIndexOf(' ', 115);
+    const lastIndex = short.lastIndexOf(' ', 100);
     const shortDesc = products.desc.substr(0, lastIndex) + '...';
 
     return (
@@ -23,7 +23,7 @@ const CartProduct = (props) => {
             </Col>
             <Col md={6}>
                 <h5>{ products.name }</h5>
-                <p>{ shortDesc }</p>
+                <p className="cart-short-text">{ shortDesc }</p>
             </Col>
             <Col md={2} className="product-price">${ products.price }</Col>
             <Col md={2}>

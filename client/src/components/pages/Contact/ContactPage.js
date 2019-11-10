@@ -18,10 +18,10 @@ const ContactPage = () => (
 				<p>E-mail: <FontAwesomeIcon icon={faEnvelope} /> office@techstore.com</p>
 				<p>Mobile Number: <FontAwesomeIcon icon={faMobileAlt} /> 207-914-3411</p>
 				<div className="social-media">
-					<a href="facebook.com"><FontAwesomeIcon icon={faFacebookSquare} /></a>
-					<a href="instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-					<a href="tweeter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-					<a href="linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
+					<a href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+					<a href="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
+					<a href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
+					<a href="https://www.linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
 				</div>
 			</div>
 	</Container>

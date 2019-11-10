@@ -24,11 +24,17 @@
 		margin-bottom: 10px;
 		max-width: max-content;
 	}
+	.alert {
+		font-size: $base-size*1.1;
+	}
 }
 
 @media (max-width: 387px) {
 	.cart {
 		text-align: center;
+		.cart-short-text {
+			font-size: $base-size;
+		}
 	}
 }
 
