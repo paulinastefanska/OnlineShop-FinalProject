@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getTotalPrice, getCart, getDiscountStatus, postCart, getOrderStatus, getRequest } from '../../../redux/productRedux/productReducer';
+import { getTotalPrice, getCart, getDiscountStatus, cartSummary, getOrderStatus, getRequest } from '../../../redux/productRedux/productReducer';
 
 import SummaryPage from './SummaryPage';
 
@@ -12,7 +12,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    postCart: (cart, price) => dispatch(postCart(cart, price))
+    cartSummary: (cart, price) => dispatch(cartSummary(cart, price))
 });
 
 

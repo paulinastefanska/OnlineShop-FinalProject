@@ -7,16 +7,6 @@ import { Button } from 'reactstrap';
 
 class SummaryPage extends React.Component {
 
-    handleOrder = () => {
-        const { cart, cartSummary, price, discountStatus } = this.props;
-
-        let cartToSend = [];
-        cartToSend = cart.map(el => ({ name: el.name, countNumber: el.countNumber }));
-        cartToSend.push({ price: price, discountStatus: discountStatus, timeStamp: new Date() });
-
-        cartSummary(cartToSend, price);
-    }
-
     render() {
         const { cart, discountStatus, price, request } = this.props;
         
