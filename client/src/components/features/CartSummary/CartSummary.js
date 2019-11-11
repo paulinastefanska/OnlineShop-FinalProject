@@ -5,6 +5,7 @@ import uuid from 'uuidv4';
 
 import Spinner from '../../common/Spinner/Spinner';
 import PageTitle from '../../common/PageTitle/PageTitle';
+import BackButton from '../../common/BackButton/BackButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button, Table } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,6 +21,7 @@ const Summary = (props) => {
         <Container className="summary">
           <PageTitle>Order summary</PageTitle>
           <div className="summary-wrapper">
+            <BackButton />
             <div className="scroll-wrapper">
               <Table>
                 <thead>

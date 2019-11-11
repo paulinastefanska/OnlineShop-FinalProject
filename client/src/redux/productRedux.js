@@ -22,7 +22,6 @@ export const getProductsSort = ({ products }) => {
   return sortProducts;
 };
 export const getMenuState = ({ products }) => products.showMenu;
-
 export const getCart = ({ products }) => products.cart;
 export const getDiscountCode = ({ products }) => products.discountCode;
 export const getDiscountStatus = ({ products }) => products.discountActive;
@@ -40,7 +39,6 @@ export const RESET_REQUEST = createActionName('RESET_REQUEST');
 export const LOAD_PRODUCTS_PAGE = createActionName('LOAD_PRODUCTS_PAGE');
 export const SORT_OPTIONS = createActionName('SORT_OPTIONS');
 export const TOGGLE_MENU = createActionName('TOGGLE_MENU');
-
 export const ADD_TO_CART = createActionName('ADD_TO_CART');
 export const DELETE_FROM_CART = createActionName('DELETE_FROM_CART');
 export const PLUS_QTY = createActionName('PLUS_QTY');
@@ -59,7 +57,6 @@ export const resetRequest = () => ({type: RESET_REQUEST});
 export const loadProductsByPage = payload => ({ payload, type: LOAD_PRODUCTS_PAGE });
 export const sortOptions = payload => ({ payload, type: SORT_OPTIONS });
 export const toggleMenu = () => ({ type: TOGGLE_MENU });
-
 export const addToCart = payload => ({ payload, type: ADD_TO_CART });
 export const deleteFromCart = payload => ({ payload, type: DELETE_FROM_CART });
 export const plusQty = id => ({ id, type: PLUS_QTY });
@@ -126,8 +123,6 @@ export default function reducer(statePart = initialState, action = {}) {
       return {...statePart, 
         showMenu: menuState
       };
-
-
     case ADD_TO_CART:
       const addedProduct = action.payload;
       addedProduct.qty += 1;
@@ -169,8 +164,6 @@ export default function reducer(statePart = initialState, action = {}) {
       return {
         ...statePart, totalPrice: roundPrice
       }
-
-
     default:
       return statePart;
   }

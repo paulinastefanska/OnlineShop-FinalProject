@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
-import { toggleMenu, getMenuState } from '../../../redux/productRedux';
+import { toggleMenu, getMenuState, getCart } from '../../../redux/productRedux';
 import NavBar from './NavBar';
 
 const mapStateToProps = state => ({
     showMenu: getMenuState(state),
+    cart: getCart(state),
 });
 
 const mapDispatchToProps = dispatch => ({

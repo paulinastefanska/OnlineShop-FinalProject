@@ -6,7 +6,7 @@
   cursor: pointer;
   padding: 0;
   &:hover{
-  	border-radius: $radius;
+    border-radius: $radius;
     box-shadow: 0 0 1.1rem rgba(0,0,0,0.2);
     transform: scale(1.08);
   } 
@@ -26,4 +26,21 @@
 }
 .non-badge {
   height: 31px; 
+}
+
+@media (max-width: 991px) {
+  .card-title {
+    font-size: $base-size/1.3;
+  }
+  .card-subtitle {
+    font-size: $base-size/1.2;
+  }
+}
+@media (max-width: 767px) {
+  .card-title {
+    font-size: $base-size*1.1;
+  }
+  .card-subtitle {
+    font-size: $base-size*1.1;
+  }
 }
