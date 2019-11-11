@@ -1,0 +1,35 @@
+@import '../../../styles/settings.scss';
+
+.summary-wrapper {
+	padding: 1rem;
+	.scroll-wrapper {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		white-space: nowrap;
+		.table{
+			color: $color-text-light;
+		}
+	}
+	.summary-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		font-weight: bold;
+		.summary-buttons {
+			margin-top: 1rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.summary {
+		text-align: center;
+		.summary-wrapper {
+			font-size: $base-size;
+		}
+	}
+}
