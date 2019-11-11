@@ -22,7 +22,7 @@ const ModalCode = (props) => {
           Your discount code: <Input value="SDFV86F" className="discount-code" disabled="disabled" />
         </ModalBody>
         <ModalFooter>
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
+          <Button color="info" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
     </div>
