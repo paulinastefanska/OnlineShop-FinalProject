@@ -16,7 +16,7 @@ const ModalPay = (props) => {
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Thank you for shopping!</ModalHeader>
         <ModalBody className="discount-text">
-          We received payment. Expect a package from us!
+          We've received payment. Expect a package from us!
         </ModalBody>
         <ModalFooter>
           <Button color="info" onClick={toggle}>Back</Button>
