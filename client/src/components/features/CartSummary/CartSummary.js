@@ -46,8 +46,8 @@ const Summary = (props) => {
               </Table>
             </div>
             <div className="summary-footer">
-                <span>Discount: {discountStatus ? '10%' : '0'}</span>
-                <span>Grand total: ${price}</span>
+                <span><strong>Discount:</strong> {discountStatus ? '10%' : '0'}</span>
+                <span><strong>Grand total:</strong> ${price}</span>
                 <div className="summary-buttons">
                   <Link to="/">
                     <Button color="info">
