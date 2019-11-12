@@ -2,7 +2,7 @@ import React from 'react';
 
 import Products from '../../features/Products/ProductsContainer';
 import TopCarousel from '../../features/Carousel/Carousel';
-import ModalCode from '../../features/Modal/Modal';
+import ModalCode from '../../features/ModalDiscount/Modal';
 import Sort from '../../features/Sort/SortContainer';
 import ProductsCounter from '../../features/ProductsCounter/ProductsCounterContainer';
 

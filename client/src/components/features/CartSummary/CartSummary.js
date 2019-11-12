@@ -6,6 +6,7 @@ import uuid from 'uuidv4';
 import Spinner from '../../common/Spinner/Spinner';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import BackButton from '../../common/BackButton/BackButton';
+import ModalPay from '../../features/ModalPay/ModalPay';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button, Table } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -54,7 +55,7 @@ const Summary = (props) => {
                       Continue shopping
                     </Button>
                   </Link>
-                  <Button color="info">Pay</Button>
+                  <ModalPay />
                 </div>
             </div>
           </div>
