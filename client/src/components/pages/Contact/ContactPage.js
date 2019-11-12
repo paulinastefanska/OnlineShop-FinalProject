@@ -12,9 +12,9 @@ const ContactPage = () => (
 	<Container className="contact">
 		<PageTitle>Contact</PageTitle>
 			<div className="contact-wrapper">
-				<p><b>TechStore</b></p>
+				<p><strong>TechStore</strong></p>
 				<p><i>9432 Division Street</i></p>
-				<p>Stone Mountain, GA 30083</p>
+				<p><i>Stone Mountain, GA 30083</i></p>
 				<p>E-mail: <FontAwesomeIcon icon={faEnvelope} /> office@techstore.com</p>
 				<p>Mobile Number: <FontAwesomeIcon icon={faMobileAlt} /> 207-914-3411</p>
 				<div className="social-media">
