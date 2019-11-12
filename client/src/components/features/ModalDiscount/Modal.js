@@ -1,5 +1,3 @@
-/* eslint react/no-multi-comp: 0, react/prop-types: 0 */
-
 import React, { useState } from 'react';
 import { Button, Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './Modal.scss';
