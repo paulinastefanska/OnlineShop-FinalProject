@@ -1,4 +1,6 @@
-# OnlineShop-FinalProject - see [DEMO](https://techstore-onlineshop.herokuapp.com)
+# OnlineShop-FinalProject 
+## [DEMO](https://techstore-onlineshop.herokuapp.com) on Heroku.
+## [DEMO](https://techstore-5850f.firebaseapp.com/) on Firebase.
 
 ### TechStore App
 This project was created for education purposes. Final individual project.
