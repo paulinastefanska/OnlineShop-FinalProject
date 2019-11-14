@@ -1,9 +1,8 @@
 # OnlineShop-FinalProject 
-## [DEMO](https://techstore-onlineshop.herokuapp.com) on Heroku.
-## [DEMO](https://techstore-5850f.firebaseapp.com/) on Firebase.
+### [DEMO](https://techstore-onlineshop.herokuapp.com) on Heroku or [DEMO](https://techstore-5850f.firebaseapp.com/) on Firebase.
 
 ### TechStore App
-This project was created for education purposes. Final individual project.
+App was created with `create-react-app` for education purposes. Final individual project for the end of bootcamp.
 
 ### Wrote using stack MERN
 * Mongo.db(Mongoose), 
@@ -21,8 +20,16 @@ This project was created for education purposes. Final individual project.
 - calculating price,
 - ordering summary.
 
-### To run App locally
-App was created with `create-react-app`. 
-Clone repo, and run command `yarn install`. For run app locally type command:  `yarn start`.
-Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
-To run build `yarn build`.
+### Installation
+```bash
+yarn install
+```
+### Usage
+To run app locally type command and open [http://localhost:8000](http://localhost:8000) to view it in the browser.
+```bash
+yarn start
+```
+Production build of app. 
+```bash
+yarn build
+```
