@@ -21,6 +21,7 @@ App was created with `create-react-app` for education purposes. Final individual
 - ordering summary.
 
 ### Installation
+Clone project and use command.
 ```bash
 yarn install
 ```
