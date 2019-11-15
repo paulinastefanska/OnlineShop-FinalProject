@@ -30,7 +30,9 @@ Products data is in MongoDB Altas CLuster, but you can also see it in `server/te
 - ordering summary.
 
 ### Available scripts
-To run app locally clone project and use command:
+#### To run the app locally:
+
+Clone project and use command:
 ```bash
 yarn install
 ```
