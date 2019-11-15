@@ -2,9 +2,18 @@
 ### [DEMO](https://techstore-onlineshop.herokuapp.com) on Heroku or [DEMO](https://techstore-5850f.firebaseapp.com/) on Firebase.
 
 ### TechStore App
-App was created with `create-react-app` for education purposes. Final individual project for the end of bootcamp.
+Final individual project for the end of Web Developer bootcamp. 
 
-### Wrote using stack MERN
+App was created with `create-react-app` for education purposes. 
+
+The application is adapted to `PWA` (Progressive Web App) you can install the app on your device directly from Chrome - using [demo](https://techstore-5850f.firebaseapp.com/) on firebase.
+
+Front-end files are in `client/src` folder.
+
+Back-end is located in `server`. 
+
+Products data is in MongoDB Altas CLuster, but you can also see it in `server/testData.js`.
+### Tech stack MERN
 * Mongo.db(Mongoose), 
 * Express.js, 
 * React.js(Redux, React Bootstrap), 
@@ -20,17 +29,16 @@ App was created with `create-react-app` for education purposes. Final individual
 - calculating price,
 - ordering summary.
 
-### Installation
-Clone project and use command.
+### Available scripts
+To run app locally clone project and use command:
 ```bash
 yarn install
 ```
-### Usage
-To run app locally type command and open [http://localhost:8000](http://localhost:8000) to view it in the browser.
+To run app type command and use `port:8000`
 ```bash
 yarn start
 ```
-Production build of app. 
+Production build of app:
 ```bash
 yarn build
 ```
