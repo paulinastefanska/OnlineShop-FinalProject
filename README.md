@@ -6,7 +6,7 @@ Final individual project for the end of Web Developer Bootcamp.
 
 App was created with `create-react-app` for education purposes. 
 
-The application is adapted to `PWA` (Progressive Web App) you can install the app on your device directly from browser - using [demo](https://techstore-5850f.firebaseapp.com/) on firebase.
+The application is adapted to `PWA` (Progressive Web App) you can install the app on your device directly from your browser.
 
 Front-end files are in `client/src` folder.
 
