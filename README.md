@@ -12,7 +12,7 @@ Front-end files are in `client/src` folder.
 
 Back-end is located in `server`. 
 
-Products data is in MongoDB Altas CLuster, but you can also see it in `server/testData.js`.
+Products data are in MongoDB Altas CLuster, but you can also see it in `server/testData.js`.
 ### Tech stack MERN
 * Mongo.db(Mongoose), 
 * Express.js, 
