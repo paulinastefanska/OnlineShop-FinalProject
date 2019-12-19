@@ -1,45 +1,44 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	padding: 1.3rem 1rem;
-	font-size: $base-size * 1.1;
-	margin: 0 auto;
-	.copy {
-		margin: 0;
-	}
-	&-menu {
-		list-style: none;
-		display: flex;
-		justify-content: space-around;
-		margin: 0;
-		text-transform: uppercase;
-		li {
-			padding-left: 1.4rem;
-		}
-	}
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 1rem;
+  font-size: $base-size * 1.1;
+  .copy {
+    margin: 0;
+  }
+  &-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    text-transform: uppercase;
+    li {
+      padding-left: 1.4rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-	.footer {
-		flex-direction: column-reverse;
-		margin-top: 0;
-		font-size: $base-size;
-		&-menu {
-			padding: 0;
-			justify-content: space-around;
-			li {
-				padding-left: 0.2rem;
-			}
-		}
-		.copy {
-			display: flex;
-			justify-content: center;
-			margin-top: 0.4rem;
-			a {
-				padding-left: 0.5rem;
-			}
-		}
-	}
+  .footer {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    font-size: $base-size;
+    &-menu {
+      padding: 0;
+      justify-content: space-around;
+      li {
+        padding-left: 0.2rem;
+      }
+    }
+    .copy {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.4rem;
+      a {
+        padding-left: 0.5rem;
+      }
+    }
+  }
 }
