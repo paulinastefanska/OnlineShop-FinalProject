@@ -1,6 +1,6 @@
 # OnlineShop-FinalProject 
 ### See [DEMO](https://techstore-5850f.firebaseapp.com/) on Firebase,
-#### or on Heroku [DEMO](https://techstore-onlineshop.herokuapp.com).
+#### or [DEMO](https://techstore-onlineshop.herokuapp.com) on Heroku.
 
 ### TechStore App
 Final individual project for the end of Web Developer Bootcamp. 
